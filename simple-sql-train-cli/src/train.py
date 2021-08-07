@@ -3,10 +3,10 @@ import os
 import pyodbc
 import pandas
 
-server = '<your-sql-svr>.database.windows.net'
+server = 'your--db.database.windows.net'
 database = 'AdventureWorks'
-username = '<your-username>'
-password = '<your-password>'   
+username = 'your--user'
+password = 'your--pwd'   
 driver= '{ODBC Driver 17 for SQL Server}'
 
 # Specifying the ODBC driver, server name, database, etc. directly

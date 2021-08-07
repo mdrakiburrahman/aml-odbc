@@ -7,6 +7,6 @@ dependencies:
   - pip:
       - 'azureml-dataset-runtime[pandas,fuse]~=1.26.0.0'
       - azureml-defaults~=1.26.0.0
-      - pyodbc
-      - pandas
   - scikit-learn==0.22.1
+  - pyodbc
+  - pandas

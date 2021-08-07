@@ -1,7 +1,7 @@
-experiment_name: Tutorial-azure-sql
+experiment_name: Tutorial-sklearn-mnist
 code:
   local_path: ./src
-command: python train.py
+command: python train.py --data-folder {inputs.mnist} --regularization 0.5
 environment: 
   name: tutorial-env
   version: 1
@@ -11,4 +11,8 @@ environment:
     image: mcr.microsoft.com/azureml/intelmpi2018.3-ubuntu16.04:20210301.v1
 compute:
   target: azureml:connectedClusterName-stage
+inputs:
+  mnist:
+    data: azureml:mnist_opendataset:1
+    mode: mount
     
